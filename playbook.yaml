@@ -1,0 +1,6 @@
+- name: install docker and run container from my image
+  hosts: myhosts
+  become: yes
+
+  roles:
+    - docker
