@@ -57,7 +57,7 @@
   community.docker.docker_container:
     name: red
     state: started
-    image: 4sinl/ansible-task
+    image: "4sinl/ansible-task:{{ BUILD_ID }}"
     ports:
       - "80:80"
     env:
