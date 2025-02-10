@@ -1,0 +1,9 @@
+server {
+        root /usr/share/nginx/html;
+
+        location = /redblue {
+                try_files /red.html =404;
+        }       
+
+        listen ${PORT};
+}
